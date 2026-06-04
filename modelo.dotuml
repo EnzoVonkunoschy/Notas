@@ -1,0 +1,41 @@
+ClassDiagram{
+
+    class DB{
+        private instancia :DB
+        private empleados: objectJSON
+        private notas: objectJSON
+        private oficinas: objectJSON
+
+        private DB():void
+        public static getInstancia(): DB
+
+        public addEmpleado(empleado: Empleado): void
+        public getEmpleado(id: String): Empleado
+        public getEmpleados(): objectJSON
+
+        public addNota(nota: Nota): void
+        public getNota(id: String): Nota
+        public getNotas(): objectJSON
+
+        public addOficina(oficina: Oficina): void
+        public getOficina(id: String): Oficina
+        public getOficinas(): objectJSON
+    }
+
+    class TestDB{
+        private db: DB
+
+        public static addEmpleadoTest(): void
+        public static getEmpleadoTest(id: String): void
+        public static getEmpleadosTest(): objectJSON
+
+        public static addNotaTest(): void
+        public static getNotaTest(id: String): void
+        public static getNotasTest(): objectJSON
+
+        public static addOficinaTest(): void
+        public static getOficinaTest(id: String): void
+        public static getOficinasTest(): objectJSON
+
+    }
+}

@@ -1,0 +1,43 @@
+ClassDiagram{
+
+
+class Oficina{
+private nombre: String
+public getNombre(): String
+public setNombre(nombre: String): void
+
+}
+
+class Empleado{
+private nombre: String
+public getNombre(): String
+public setNombre(nombre: String): void
+}
+
+class Nota{
+private destinatario: Destinatario
+private autor: Empleado
+private texto: String
+public getDestinatario(): Empleado
+public setDestinatario(destinatario: Empleado): void    
+public getAutor(): Empleado
+public setAutor(autor: Empleado): void
+public getTexto(): String
+public setTexto(texto: String): void
+
+}
+
+Oficina --> Empleado;
+
+interface Destinatario {
+  setNombre(nombre: String): void
+  getNombre(): String
+  
+ }
+
+ Empleado -r-> Destinatario
+ Oficina -r-> Destinatario
+
+ Nota --> Destinatario
+
+}
