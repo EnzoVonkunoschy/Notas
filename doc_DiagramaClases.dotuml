@@ -5,6 +5,7 @@ class Oficina{
 private nombre: String
 public getNombre(): String
 public setNombre(nombre: String): void
+public toString(): String
 
 }
 
@@ -12,6 +13,7 @@ class Empleado{
 private nombre: String
 public getNombre(): String
 public setNombre(nombre: String): void
+public toString(): String
 }
 
 class Nota{
@@ -24,6 +26,7 @@ public getAutor(): Empleado
 public setAutor(autor: Empleado): void
 public getTexto(): String
 public setTexto(texto: String): void
+public toString(): String
 
 }
 
@@ -32,7 +35,6 @@ Oficina --> Empleado;
 interface Destinatario {
   setNombre(nombre: String): void
   getNombre(): String
-  
  }
 
  Empleado -r-> Destinatario
