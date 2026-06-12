@@ -2,14 +2,14 @@ import javax.print.attribute.standard.Destination;
 
 public class AppNotas {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println("Hola Notas");
 
         Oficina miOficina = new Oficina();
         System.out.print(miOficina);
 
         miOficina.setNombre("Personal");
-        if(miOficina.getNombre().equals("Personal")){
+        if (miOficina.getNombre().equals("Personal")) {
             System.out.print(miOficina);
         }
 
@@ -17,7 +17,7 @@ public class AppNotas {
         System.out.print(miEmpleado);
 
         miEmpleado.setNombre("Pablo");
-        if(miEmpleado.getNombre().equals("Pablo")){
+        if (miEmpleado.getNombre().equals("Pablo")) {
             System.out.print(miEmpleado);
         }
 
@@ -38,6 +38,6 @@ public class AppNotas {
         otraNota.setAutor(miEmpleado);
         otraNota.setTexto("¡Hola Señor Auditor!");
         System.out.print(otraNota);
-        
+
     }
 }
