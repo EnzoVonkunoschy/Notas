@@ -1,5 +1,4 @@
 public interface Destinatario {
-    public void setNombre(String nombre);
-
-    public String getNombre();
+    void setNombre(String nombre);
+    String getNombre();
 }
